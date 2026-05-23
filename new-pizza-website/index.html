@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>New Pizza</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>New Pizza 🍕</h1>
+  <p>Fresh • Hot • Delicious</p>
+</header>
+
+<section class="menu">
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1601924582970-9238bcb495d9">
+    <h3>Pepperoni Pizza</h3>
+    <p>₱199</p>
+    <button onclick="selectPizza('Pepperoni Pizza')">Select</button>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1548365328-9f547fb095a6">
+    <h3>Cheese Pizza</h3>
+    <p>₱179</p>
+    <button onclick="selectPizza('Cheese Pizza')">Select</button>
+  </div>
+
+</section>
+
+<section class="order">
+
+  <h2>Place Order</h2>
+
+  <input type="text" id="name" placeholder="Name">
+  <input type="text" id="address" placeholder="Address">
+
+  <input type="text" id="selectedPizza" placeholder="Selected Pizza" readonly>
+
+  <input type="number" id="qty" placeholder="Quantity">
+
+  <button onclick="placeOrder()">Order Now</button>
+
+  <p id="result"></p>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
